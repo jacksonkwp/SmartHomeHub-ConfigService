@@ -6,7 +6,10 @@ spring:
       server:
         git:
           uri: https://github.com/zephyrpawan/SmartHomeHub-Configs
-          search-paths: sprinkler-service
+          search-paths:
+            - sprinkler-service
+            - notification-service
+            - music-service
           default-label: main
 
 server:
