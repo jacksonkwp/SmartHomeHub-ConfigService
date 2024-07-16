@@ -1,3 +1,6 @@
+server:
+  port: 8071
+
 spring:
   application:
     name: config-server
@@ -12,5 +15,8 @@ spring:
             - music-service
           default-label: main
 
-server:
-  port: 8071
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
